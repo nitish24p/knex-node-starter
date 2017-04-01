@@ -1,0 +1,13 @@
+{
+  "apps" : [{
+    "name"        : "app-name",
+    "script"      : "./boot_server.js",
+    "exec_mode"   : "cluster",
+    "instances" : 1,
+    "merge_logs" :true,
+    "env": {
+      "PORT": 3000,
+      "MONITORING": false
+    },
+  }]
+}

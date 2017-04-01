@@ -57,7 +57,7 @@
     "serve-favicon": "2.3.2",
     "snyk": "1.23.3",
     "style-loader": "0.13.1",
-    "webpack": "1.14.0",
+    "webpack": "1.14.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -66,5 +66,5 @@
     "eslint": "3.12.2",
     "eslint-config-practo": "^0.1.9",
     "mocha": "2.4.5"
-  },
+  }
 }

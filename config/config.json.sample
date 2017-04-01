@@ -1,0 +1,28 @@
+{
+  "name": "app_name",
+  "db": {
+    "database_name": "your_db_name",
+    "database_password": "db_passowrd",
+    "database_username": "insurance",
+    "host": "mysql",
+    "client": "mysql",
+    "enablelogging": false,
+    "charset": "utf8",
+    "port": "3306",
+    "maxpool": 5,
+    "minpool": 0
+  },
+  "sentry": {
+    "enabled": false,
+    "dsn": "<DSN KEY GOES HERE>"
+  },
+  "graylog": {
+    "enabled": false,
+    "host": "<HOST GOES HERE>",
+    "port": "<PORT GOES HERE>"
+  },
+  "redis" : {
+    "host" : "http://127.0.0.1",
+    "port": 6379
+  }
+}

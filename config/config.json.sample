@@ -3,7 +3,7 @@
   "db": {
     "database_name": "your_db_name",
     "database_password": "db_passowrd",
-    "database_username": "insurance",
+    "database_username": "username",
     "host": "mysql",
     "client": "mysql",
     "enablelogging": false,

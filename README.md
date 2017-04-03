@@ -72,3 +72,12 @@ vim server/pm2_config/pm2_config.json
 
 ```
 and edit. Other process.env variables can be added here too.
+
+* View Logs for debugging
+```bash
+pm2 logs
+webpack -w
+
+```
+Both the above should be run in seperate terminals and the respective modules must be installed globally
+

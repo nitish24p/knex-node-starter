@@ -1,0 +1,11 @@
+nguage: node_js
+
+node_js:
+  - 6
+
+
+cache:
+  apt: true
+  directories:
+    - node_modules
+

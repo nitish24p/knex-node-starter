@@ -15,6 +15,7 @@ class Article extends Bookshelf.Model {
     return this.belongsTo('User');
   }
 
+  // add custom getter setters here
 };
 
 export default Bookshelf.model('Article', Article);

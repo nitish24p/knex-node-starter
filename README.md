@@ -10,6 +10,7 @@ This a full stack javascript application using [Express](http://expressjs.com/) 
 
 
 **Quick start**
+
 Install dependencies
 ```bash
 npm install

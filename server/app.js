@@ -2,7 +2,7 @@
 import config from './../config/config.json';
 import express from 'express';
 import bodyParser from 'body-parser';
-import morgan from "morgan";
+import morgan from 'morgan';
 import path from 'path';
 import raven from 'raven';
 import cookieParser from 'cookie-parser';
@@ -40,12 +40,12 @@ let redis_status;
 
 redisClient.on('connect', ()=> {
   logger.log('info','redis connected');
-  redis_status = "Connected";
+  redis_status = 'Connected';
 });
 
 redisClient.on('error', ()=> {
   logger.log('info', 'redis connection failure');
-  redis_status = "Connection failed";
+  redis_status = 'Connection failed';
 });
 
 

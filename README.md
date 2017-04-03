@@ -1,4 +1,5 @@
 # knex-node-starter
+[![Build Status](https://travis-ci.org/nitish24p/knex-node-starter.svg?branch=master)](https://travis-ci.org/nitish24p/knex-node-starter)
 
 ### Tech Details
 This a full stack javascript application using [Express](http://expressjs.com/) as a backend framework, [Knex](http://knexjs.org/) as a query builder, [Bookshelf](http://bookshelfjs.org/) as an ORM for node and uses [React](https://facebook.github.io/react/) with server side rendering on the front end.

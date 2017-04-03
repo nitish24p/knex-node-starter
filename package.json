@@ -5,8 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "node_modules/.bin/knex migrate:latest --env server_env",
-    "start": "npm run migrate && node_modules/.bin/pm2 start server/pm2_configs/pm2_config.json",
-    "start:dev": "npm run migrate && node_modules/.bin/pm2 start server/pm2_configs/pm2_config.json --watch",
+    "start": "node_modules/.bin/pm2 start server/pm2_configs/pm2_config.json",
+    "start:dev": "node_modules/.bin/pm2 start server/pm2_configs/pm2_config.json --watch",
     "build:dev": "node_modules/.bin/webpack -w",
     "build": "NODE_ENV='production' node_modules/.bin/webpack -p"
   },

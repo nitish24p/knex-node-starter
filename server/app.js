@@ -10,7 +10,8 @@ import session from 'express-session';
 import redis from 'redis';
 
 
-import { default as apiRoutes } from './routes/api_router.js';
+import { default as apiRoutes } from './routes/apiRouter.js';
+import clientRoutes from './../client/clientRouter.js'
 
 const favicon = require('serve-favicon');
 
@@ -66,12 +67,12 @@ app.use(session(
 app.use('/api/v1/', apiRoutes);
 
 // All other routes can be stored here
-//app.use('/', clientRoutes);
+app.use('/', clientRoutes);
 
 
 // Static Folder
-//app.use(express.static(path.join(__dirname, '../client')));
-//app.use(favicon(path.join(__dirname, '..', 'client', 'static','favicon.ico')));
+app.use(express.static(path.join(__dirname, '../client')));
+app.use(favicon(path.join(__dirname, '..', 'client', 'static','favicon.ico')));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

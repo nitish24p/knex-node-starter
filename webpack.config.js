@@ -47,11 +47,11 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors-[chunkhash].js', Infinity),
-    new ExtractTextPlugin("[name]-[chunkhash].css"),
+    new ExtractTextPlugin('[name]-[chunkhash].css'),
     function() {
-      this.plugin("done", function(stats) {
-        require("fs").writeFileSync(
-          path.join(__dirname, "client", "build", "stats.json"),
+      this.plugin('done', function(stats) {
+        require('fs').writeFileSync(
+          path.join(__dirname, 'client', 'build', 'stats.json'),
           JSON.stringify(stats.toJson().assetsByChunkName));
       });
     },

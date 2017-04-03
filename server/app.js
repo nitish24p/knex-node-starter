@@ -10,7 +10,7 @@ import session from 'express-session';
 import redis from 'redis';
 
 
-import { default as apiRoutes } from './routes/api_router.js';
+import { default as apiRoutes } from './routes/apiRouter.js';
 
 const favicon = require('serve-favicon');
 

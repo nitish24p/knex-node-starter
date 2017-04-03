@@ -16,7 +16,7 @@ let vendorSrc = stats.vendors;
 export function renderHomePage(req) {
 
   const mainStore = createNewStore();
-  mainStore.dispatch(setWelcomeMessage("Hey if you see this, you're ready to start hacking"));
+  mainStore.dispatch(setWelcomeMessage('Well done lets get started. Setup worked.'));
 
   let app;
   match({ routes, location: req.url }, (error, redirectLocation, renderProps) => {

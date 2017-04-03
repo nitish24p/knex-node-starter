@@ -8,7 +8,8 @@
     "start": "node_modules/.bin/pm2 start server/pm2_configs/pm2_config.json",
     "start:dev": "node_modules/.bin/pm2 start server/pm2_configs/pm2_config.json --watch",
     "build:dev": "node_modules/.bin/webpack -w",
-    "build": "NODE_ENV='production' node_modules/.bin/webpack -p"
+    "build": "NODE_ENV='production' node_modules/.bin/webpack -p",
+    "eslint": "git ls-files | grep -v '^tests' | grep '\\.js$' | xargs eslint --config .eslintrc"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,8 @@
     "crypto": "0.0.3",
     "css-loader": "0.26.1",
     "debug": "2.4.5",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-react": "^6.10.3",
     "express": "4.14.0",
     "express-session": "1.14.2",
     "extract-text-webpack-plugin": "1.0.1",

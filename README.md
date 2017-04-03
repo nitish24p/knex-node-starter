@@ -10,12 +10,18 @@ This a full stack javascript application using [Express](http://expressjs.com/) 
 
 
 **Quick start**
+Install dependencies
+```bash
+npm install
+```
+Copy config file
 ```bash
 cp config/config.json.sample config/config.json
   
 ```
 Edit ```config.json``` with your required configs. 
 
+Start app
 ```
 npm run migrate
 npm run build
